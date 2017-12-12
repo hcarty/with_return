@@ -1,0 +1,13 @@
+(jbuild_version 1)
+
+(library
+ ((name ppx_return)
+  (public_name ppx_return)
+  (synopsis "Syntax sugar for early returns")
+  (modules (ppx_return))
+  (libraries (compiler-libs.common
+              ocaml-migrate-parsetree
+              ppx_tools_versioned
+              ppx_tools_versioned.metaquot_405))
+  (kind ppx_rewriter)
+  (preprocess (pps (ppx_tools_versioned.metaquot_405)))))

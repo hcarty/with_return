@@ -1,0 +1,12 @@
+opam-version: "1.2"
+maintainer: "Hezekiah M. Carty <hez@0ok.org>"
+authors: [ "Hezekiah M. Carty <hez@0ok.org>" ]
+license: "MIT"
+homepage: "https://github.com/hcarty/with_return"
+bug-reports: "https://github.com/hcarty/with_return/issues"
+dev-repo: "https://github.com/hcarty/with_return.git"
+build:[ "jbuilder" "build" "-p" name "-j" jobs ]
+depends: [
+  "jbuilder" {build & >= "1.0+beta10"}
+]
+available: [ ocaml-version >= "4.03.0" ]

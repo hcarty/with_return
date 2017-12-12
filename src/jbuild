@@ -1,0 +1,5 @@
+(jbuild_version 1)
+
+(library
+ ((name with_return)
+  (public_name with_return)))
