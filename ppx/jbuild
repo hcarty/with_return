@@ -4,7 +4,7 @@
  ((name ppx_return)
   (public_name ppx_return)
   (synopsis "Syntax sugar for early returns")
-  (modules (ppx_return))
+  (ppx_runtime_libraries (with_return))
   (libraries (compiler-libs.common
               ocaml-migrate-parsetree
               ppx_tools_versioned

@@ -2,7 +2,6 @@
 
 (executable
  ((name test)
-  (libraries (with_return))
   (preprocess (pps (ppx_return)))))
 
 (alias
