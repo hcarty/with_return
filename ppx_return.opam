@@ -10,5 +10,6 @@ depends: [
   "jbuilder" {build & >= "1.0+beta10"}
   "ocaml-migrate-parsetree"
   "ppx_tools_versioned"
+  "with_return"
 ]
 available: [ ocaml-version >= "4.03.0" ]
