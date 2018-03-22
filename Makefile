@@ -14,7 +14,7 @@ doc:
 	jbuilder build @doc
 
 repl:
-	jbuilder utop src
+	jbuilder utop src -- -require ppx_return
 
 clean:
 	jbuilder clean

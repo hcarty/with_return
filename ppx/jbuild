@@ -6,8 +6,6 @@
   (synopsis "Syntax sugar for early returns")
   (ppx_runtime_libraries (with_return))
   (libraries (compiler-libs.common
-              ocaml-migrate-parsetree
-              ppx_tools_versioned
-              ppx_tools_versioned.metaquot_405))
+              ocaml-migrate-parsetree))
   (kind ppx_rewriter)
-  (preprocess (pps (ppx_tools_versioned.metaquot_405)))))
+  (preprocess (pps (ppx_tools_versioned.metaquot_406)))))
